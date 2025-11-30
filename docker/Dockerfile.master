@@ -1,0 +1,7 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY master.py .
+COPY sdk ./sdk
+CMD ["python3", "master.py", "--count", "10", "--interval", "0.2"]
