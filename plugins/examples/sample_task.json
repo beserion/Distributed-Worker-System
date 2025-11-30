@@ -1,0 +1,7 @@
+{
+  "id": "example-1",
+  "type": "heavy_compute",
+  "payload": {
+    "n": 250
+  }
+}

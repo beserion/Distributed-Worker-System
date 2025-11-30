@@ -1,0 +1,8 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY worker.py .
+COPY plugins ./plugins
+ENV REDIS_HOST=redis
+CMD ["python3", "worker.py"]

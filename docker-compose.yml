@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+  master:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.master
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
+  worker:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.worker
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
