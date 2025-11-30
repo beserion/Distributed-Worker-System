@@ -74,8 +74,7 @@ This project is built to demonstrate real distributed-systems engineering and pr
 ### **1. Clone the Repository**
 
 ```bash
-git clone https://github.com/beserion/beseri_distributed_worker.git
-cd beseri_distributed_worker
+git clone https://github.com/beserion/Distributed-Worker-System.git
 ```
 
 ---
