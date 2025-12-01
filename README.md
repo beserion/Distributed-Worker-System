@@ -1,4 +1,4 @@
-# **Beseri Distributed Worker System**
+# **Beserion Distributed Worker System**
 
 A fault-tolerant, distributed job processing system designed for high-load background task execution.
 It provides master → queue → worker architecture with retry logic, visibility timeouts, monitoring, and multi-language worker support (Python + C).
